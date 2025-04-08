@@ -30,6 +30,10 @@ brew install luarocks
 luarocks install magick
 ```
 
+### FZF for telescope fzf
+
+`brew install fzf`
+
 ---
 
 ## ⌨️ Mappings
@@ -46,6 +50,17 @@ luarocks install magick
 | Key         | Description        | Mode |
 | ----------- | ------------------ | ---- |
 | \<leader\>e | Open file explorer | N    |
+
+### Telescope
+
+| Key          | Description    | Mode |
+| ------------ | -------------- | ---- |
+| \<leader\>ff | Find file      | N    |
+| \<leader\>fw | Find by world  | N    |
+| \<leader\>fb | Watch buffers  | N    |
+| \<leader\>th | Theme Switcher | N    |
+| gd           | Go defenition  | N    |
+| gr           | Go reference   | N    |
 
 ## ⭐️ Utils
 
@@ -82,3 +97,25 @@ local mergedObject = merge(first, second) -- { foo = "Hello", bar = "World" }
 ### Linting
 
 - [stevearc/conform.nvim](https://github.com/stevearc/conform.nvim) - used for formating files
+
+### Telescope
+
+- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - used to fast searching files by word and naming
+- [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) - setup fzf search to telecsope
+- [andrew-george/telescope-themes](https://github.com/andrew-george/telescope-themes) - used to fast switch colorschemes
+
+---
+
+## Good to know
+
+### FZF Cheat code
+
+| Token     | Match type                 | Description                          |
+| --------- | -------------------------- | ------------------------------------ |
+| `sbtrkt`  | fuzzy-match                | Items that match `sbtrkt`            |
+| `'wild`   | exact-match (quoted)       | Items that include `wild`            |
+| `^music`  | prefix-exact-match         | Items that start with `music`        |
+| `.mp3$`   | suffix-exact-match         | Items that end with `.mp3`           |
+| `!fire`   | inverse-exact-match        | Items that do not include `fire`     |
+| `!^music` | inverse-prefix-exact-match | Items that do not start with `music` |
+| `!.mp3$`  | inverse-suffix-exact-match | Items that do not end with `.mp3`    |
