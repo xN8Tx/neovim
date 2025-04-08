@@ -8,10 +8,9 @@
 
 `brew install jstkdng/programs/ueberzugpp`
 
-Setup config
+Setup config `~/.config/ueberzugpp/config.json`
 
 ```json
-// ~/.config/ueberzugpp/config.json
 {
   "layer": {
     "silent": true,
@@ -37,16 +36,16 @@ luarocks install magick
 
 ### Base
 
-| Key   | Description                     | Mode |
-| ----- | ------------------------------- | ---- |
-| jj    | Escape to normal mode           | I    |
-| <C-s> | Save file and go to normal mode | I, N |
+| Key     | Description                     | Mode |
+| ------- | ------------------------------- | ---- |
+| jj      | Escape to normal mode           | I    |
+| \<C-s\> | Save file and go to normal mode | I, N |
 
 ### Neotree
 
-| Key       | Description        | Mode |
-| --------- | ------------------ | ---- |
-| <leader>e | Open file explorer | N    |
+| Key         | Description        | Mode |
+| ----------- | ------------------ | ---- |
+| \<leader\>e | Open file explorer | N    |
 
 ## ⭐️ Utils
 
@@ -83,4 +82,3 @@ local mergedObject = merge(first, second) -- { foo = "Hello", bar = "World" }
 ### Linting
 
 - [stevearc/conform.nvim](https://github.com/stevearc/conform.nvim) - used for formating files
-
