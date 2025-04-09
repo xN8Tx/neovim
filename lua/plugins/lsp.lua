@@ -270,4 +270,14 @@ return {
       }
     end,
   },
+  {
+    "mattn/emmet-vim",
+    ft = { "html", "css", "javascript", "javascriptreact", "typescriptreact", "vue" },
+    config = function()
+      vim.api.nvim_set_keymap("i", "<leader>ee", "<C-y>,", {
+        desc = "Expand emmet",
+        silent = true,
+      })
+    end,
+  },
 }

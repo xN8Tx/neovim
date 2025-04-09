@@ -71,6 +71,12 @@ luarocks install magick
 | \<C-[\> | Codemium prev suggestion | I    |
 | \<C-x\> | Codemium cancel          | I    |
 
+### Emmet
+
+| Key          | Description  | Mode |
+| ------------ | ------------ | ---- |
+| \<leader\>ee | Expand Emmet | I    |
+
 ## ⭐️ Utils
 
 ### `merge`
@@ -103,6 +109,7 @@ local mergedObject = merge(first, second) -- { foo = "Hello", bar = "World" }
 - [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - used for connect NeoVim and LSP
 - [hrsh7th/nvim-cmp](httsp://hithub.com/hrsh7th/nvim-cmp) - used for show autocomplets and suggestions (This plugin in deps have a lot of another plugins which help to connect to lsp or just simplify life)
 - [Exafunction/windsurf.vim](https://github.com/Exafunction/windsurf.vim) - add codemium AI to Neovim
+- [mattn/emmet-vim](https://github.com/mattn/emmet-vim) - add Emmet to Neovim
 
 ### Linting
 
