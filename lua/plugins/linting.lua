@@ -19,6 +19,7 @@ return {
           json = { "prettierd" },
           markdown = { "prettierd" },
           graphql = { "prettierd" },
+          vue = { "prettierd" },
           lua = { "stylua" },
           -- ["*"] = { "prettierd" }, -- another files
         },

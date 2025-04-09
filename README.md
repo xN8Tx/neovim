@@ -62,6 +62,15 @@ luarocks install magick
 | gd           | Go defenition  | N    |
 | gr           | Go reference   | N    |
 
+### Codemium
+
+| Key     | Description              | Mode |
+| ------- | ------------------------ | ---- |
+| \<C-a\> | Codemium accept          | I    |
+| \<C-]\> | Codemium next suggestion | I    |
+| \<C-[\> | Codemium prev suggestion | I    |
+| \<C-x\> | Codemium cancel          | I    |
+
 ## ⭐️ Utils
 
 ### `merge`
@@ -93,6 +102,7 @@ local mergedObject = merge(first, second) -- { foo = "Hello", bar = "World" }
 - [WhoIsSethDaniel/mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim) - used for install another from LSP to Mason
 - [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - used for connect NeoVim and LSP
 - [hrsh7th/nvim-cmp](httsp://hithub.com/hrsh7th/nvim-cmp) - used for show autocomplets and suggestions (This plugin in deps have a lot of another plugins which help to connect to lsp or just simplify life)
+- [Exafunction/windsurf.vim](https://github.com/Exafunction/windsurf.vim) - add codemium AI to Neovim
 
 ### Linting
 
