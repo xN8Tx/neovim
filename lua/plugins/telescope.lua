@@ -32,6 +32,27 @@ return {
       map("n", "gd", builtin.lsp_definitions, merge(opts, { desc = "Go definitions" }))
 
       telescope.setup {
+        defaults = {
+          layout_strategy = "horizontal",
+          layout_config = {
+            height = 0.9,
+            prompt_position = "top",
+            preview_width = 0.6,
+            width = 0.9,
+          },
+        },
+        pickers = {
+          find_files = {
+            layout_strategy = "horizontal",
+            theme = "dropdown",
+            layout_config = {
+              height = 0.9,
+              prompt_position = "top",
+              preview_width = 0,
+              width = 0.9,
+            },
+          },
+        },
         extensions = {
           fzf = {
             fuzzy = true, -- false will only do exact matching
@@ -48,15 +69,6 @@ return {
               -- override path to file that execute colorscheme command
               path = vim.fn.stdpath "config" .. "/lua/config/colorscheme.lua",
             },
-          },
-        },
-        defaults = {
-          layout_strategy = "horizontal",
-          layout_config = {
-            height = 0.9,
-            prompt_position = "top",
-            preview_width = 0.6,
-            width = 0.9,
           },
         },
       }

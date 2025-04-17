@@ -77,6 +77,21 @@ luarocks install magick
 | ------------ | ------------ | ---- |
 | \<leader\>ee | Expand Emmet | I    |
 
+### Barbar
+
+| Key         | Description                  | Mode |
+| ----------- | ---------------------------- | ---- |
+| `<Tab>`     | Next buffer                  | N    |
+| `<S-Tab>`   | Previous buffer              | N    |
+| `X`         | Close current buffer         | N    |
+| `<leader>X` | Close all but current buffer | N    |
+
+### Which-key
+
+| Key         | Description               | Mode |
+| ----------- | ------------------------- | ---- |
+| `<leader>?` | Show buffer local keymaps | N    |
+
 ## ⭐️ Utils
 
 ### `merge`
@@ -98,8 +113,10 @@ local mergedObject = merge(first, second) -- { foo = "Hello", bar = "World" }
 
 ### UI
 
-- [nvim-neo-tree/neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) - used for file explorer
-- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesiter/nvim-treesiter) - used for hilight code
+- [nvim-neo-tree/neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) – used as a file explorer with icon support, handy keybindings, and auto-refresh on file changes.
+- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) – provides advanced syntax highlighting and code parsing using Tree-sitter.
+- [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim) – tabline plugin for managing buffers with icons, modified status, pinned tabs, and custom keymaps.
+- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) – statusline plugin with theme support, icon integration, and highly customizable layout.
 
 ### LSP
 
@@ -120,6 +137,11 @@ local mergedObject = merge(first, second) -- { foo = "Hello", bar = "World" }
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - used to fast searching files by word and naming
 - [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) - setup fzf search to telecsope
 - [andrew-george/telescope-themes](https://github.com/andrew-george/telescope-themes) - used to fast switch colorschemes
+
+### Editing
+
+- [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs) – automatically inserts matching pairs (e.g., `()`, `[]`, `{}`, `""`) while typing in insert mode.
+- [folke/which-key.nvim](https://github.com/folke/which-key.nvim) – displays a popup with available keybindings as you type, making it easier to discover and remember mappings.
 
 ---
 

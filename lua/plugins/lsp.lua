@@ -8,6 +8,7 @@ local servers = {
   "html",
   "jsonls",
   "tailwindcss",
+  "eslint",
 }
 
 return {
@@ -72,6 +73,13 @@ return {
               globals = { "vim" },
             },
           },
+        },
+      }
+
+      lspconfig.eslint.setup {
+        settings = {
+          -- helps eslint find the eslintrc when it's placed in a subfolder instead of the cwd root
+          workingDirectory = { mode = "auto" },
         },
       }
 
