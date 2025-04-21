@@ -24,7 +24,7 @@ return {
       map("n", "<leader>fb", builtin.buffers, merge(opts, { desc = "Watch buffers" }))
       -- map("n", "<leader>fh", builtin.help_tags, opts)
       -- map("n", "<leader>gb", builtin.git_branches, opts)
-      -- map("n", "<leader>gc", builtin.git_commits, opts)
+      map("n", "<leader>gc", builtin.git_commits, opts)
       -- map("n", "<leader>gs", builtin.git_status, opts)
       -- map("n", "<leader>ls", builtin.lsp_document_symbols, opts)
       map("n", "<leader>th", ":Telescope themes<CR>", merge(opts, { desc = "Theme Switcher" }))

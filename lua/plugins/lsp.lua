@@ -1,4 +1,5 @@
 local servers = {
+  "astro",
   "lua_ls",
   "ts_ls",
   "cssls",

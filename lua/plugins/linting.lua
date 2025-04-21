@@ -21,6 +21,7 @@ return {
           vue = { "prettierd" },
           lua = { "stylua" },
           scss = { "prettierd" },
+          astro = { "prettierd" },
         },
         format_on_save = {
           lsp_fallback = true,
@@ -46,6 +47,7 @@ return {
         css = { "eslint_d" },
         html = { "eslint_d" },
         vue = { "eslint_d" },
+        astro = { "eslint_d" },
       }
 
       local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
