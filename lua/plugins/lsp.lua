@@ -38,7 +38,6 @@ return {
 
       mason_tool_installer.setup {
         ensure_installed = {
-          "eslint_d",
           "prettierd",
           "codespell",
           "stylua",
@@ -142,6 +141,12 @@ return {
             },
           },
         },
+      }
+
+      vim.diagnostic.config {
+        virtual_text = true, -- должно быть true
+        signs = true,
+        underline = true,
       }
     end,
   },
@@ -281,7 +286,7 @@ return {
   },
   {
     "mattn/emmet-vim",
-    ft = { "html", "css", "javascript", "javascriptreact", "typescriptreact", "vue" },
+    ft = { "html", "css", "javascript", "javascriptreact", "typescriptreact", "vue", "astro" },
     config = function()
       vim.api.nvim_set_keymap("i", "<leader>ee", "<C-y>,", {
         desc = "Expand emmet",

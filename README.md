@@ -40,10 +40,11 @@ luarocks install magick
 
 ### Base
 
-| Key     | Description                     | Mode |
-| ------- | ------------------------------- | ---- |
-| jj      | Escape to normal mode           | I    |
-| \<C-s\> | Save file and go to normal mode | I, N |
+| Key       | Description                     | Mode |
+| --------- | ------------------------------- | ---- |
+| jj        | Escape to normal mode           | I    |
+| \<C-s\>   | Save file and go to normal mode | I, N |
+| <leader>K | Show diagnostic buffer          | N    |
 
 ### Neotree
 
@@ -107,6 +108,28 @@ local second = { bar = "World" }
 local mergedObject = merge(first, second) -- { foo = "Hello", bar = "World" }
 ```
 
+### `russian-mappings`
+
+This util function helps to create russian mappings.
+
+```lua
+-- Russian keyboard map
+local russianMapings = require("utils.russian-mapings").russian
+
+russianMapings()
+```
+
+### `opts-description`
+
+This util function helps to create default mapings options with description.
+
+```lua
+local optsWithDesc = require("utils.opts-description").optsWithDesc
+local map = vim.keymap.set
+
+map("i", "jj", "<Esc>", optsWithDesc "Escape to normal mode")
+```
+
 ---
 
 ## 🔌 Plugins
@@ -138,10 +161,14 @@ local mergedObject = merge(first, second) -- { foo = "Hello", bar = "World" }
 - [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) - setup fzf search to telecsope
 - [andrew-george/telescope-themes](https://github.com/andrew-george/telescope-themes) - used to fast switch colorschemes
 
-### Editing
+### Misc
 
 - [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs) – automatically inserts matching pairs (e.g., `()`, `[]`, `{}`, `""`) while typing in insert mode.
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim) – displays a popup with available keybindings as you type, making it easier to discover and remember mappings.
+- [filipdutescu/renamer.nvim](https://github.com/filipdutescu/renamer.nvim) – a neovim plugin that allows you to rename variables in the current buffer.
+- [rhysd/git-messenger.vim](https://github.com/rhysd/git-messenger.vim) – displays the commit info about selected line.
+- [MagicDuck/grug-far.nvim](https://github.com/MagicDuck/grug-far.nvim) – used for multiple rename in all project
+- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) – adds indentation guides to empty lines
 
 ---
 
