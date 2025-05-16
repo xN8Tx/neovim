@@ -40,11 +40,11 @@ luarocks install magick
 
 ### Base
 
-| Key       | Description                     | Mode |
-| --------- | ------------------------------- | ---- |
-| jj        | Escape to normal mode           | I    |
-| \<C-s\>   | Save file and go to normal mode | I, N |
-| <leader>K | Show diagnostic buffer          | N    |
+| Key         | Description                     | Mode |
+| ----------- | ------------------------------- | ---- |
+| jj          | Escape to normal mode           | I    |
+| \<C-s\>     | Save file and go to normal mode | I, N |
+| \<leader\>K | Show diagnostic buffer          | N    |
 
 ### Neotree
 
